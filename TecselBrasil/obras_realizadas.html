@@ -1,0 +1,446 @@
+﻿<!doctype html>
+<html>
+
+<!-- Mirrored from www.cardosoengenharia.com.br/obras_realizadas.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 14 Jan 2015 22:47:06 GMT -->
+<head>
+<meta charset="utf-8">
+<link href="style02.css" rel="stylesheet">
+<title>Cardoso Engenharia - Comércio e Construção</title>
+
+
+
+<!-- Add jQuery library -->
+	<script type="text/javascript" src="lib/jquery-1.9.0.min.js"></script>
+
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="source/jquery.fancybox63b9.js?v=2.1.4"></script>
+	<link rel="stylesheet" type="text/css" href="source/jquery.fancybox63b9.css?v=2.1.4" media="screen" />
+
+	<!-- Add Button helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="source/helpers/jquery.fancybox-buttons3447.css?v=1.0.5" />
+	<script type="text/javascript" src="source/helpers/jquery.fancybox-buttons3447.js?v=1.0.5"></script>
+
+	<!-- Add Thumbnail helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="source/helpers/jquery.fancybox-thumbsf2ad.css?v=1.0.7" />
+	<script type="text/javascript" src="source/helpers/jquery.fancybox-thumbsf2ad.js?v=1.0.7"></script>
+
+	<!-- Add Media helper (this is optional) -->
+	<script type="text/javascript" src="source/helpers/jquery.fancybox-media3447.js?v=1.0.5"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			$('.fancybox').fancybox();
+
+			/*
+			 *  Different effects
+			 */
+
+			// Change title type, overlay closing speed
+			$(".fancybox-effects-a").fancybox({
+				helpers: {
+					title : {
+						type : 'outside'
+					},
+					overlay : {
+						speedOut : 0
+					}
+				}
+			});
+
+			// Disable opening and closing animations, change title type
+			$(".fancybox-effects-b").fancybox({
+				openEffect  : 'none',
+				closeEffect	: 'none',
+
+				helpers : {
+					title : {
+						type : 'over'
+					}
+				}
+			});
+
+			// Set custom style, close if clicked, change title type and overlay color
+			$(".fancybox-effects-c").fancybox({
+				wrapCSS    : 'fancybox-custom',
+				closeClick : true,
+
+				openEffect : 'none',
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					overlay : {
+						css : {
+							'background' : 'rgba(238,238,238,0.85)'
+						}
+					}
+				}
+			});
+
+			// Remove padding, set opening and closing animations, close if clicked and disable overlay
+			$(".fancybox-effects-d").fancybox({
+				padding: 0,
+
+				openEffect : 'elastic',
+				openSpeed  : 150,
+
+				closeEffect : 'elastic',
+				closeSpeed  : 150,
+
+				closeClick : true,
+
+				helpers : {
+					overlay : null
+				}
+			});
+
+			/*
+			 *  Button helper. Disable animations, hide close button, change title type and content
+			 */
+
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+
+
+			/*
+			 *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+			 */
+
+			$('.fancybox-thumbs').fancybox({
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+				arrows    : false,
+				nextClick : true,
+
+				helpers : {
+					thumbs : {
+						width  : 50,
+						height : 50
+					}
+				}
+			});
+
+			/*
+			 *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
+			*/
+			$('.fancybox-media')
+				.attr('rel', 'media-gallery')
+				.fancybox({
+					openEffect : 'none',
+					closeEffect : 'none',
+					prevEffect : 'none',
+					nextEffect : 'none',
+
+					arrows : false,
+					helpers : {
+						media : {},
+						buttons : {}
+					}
+				});
+
+			/*
+			 *  Open manually
+			 */
+
+			$("#fancybox-manual-a").click(function() {
+				$.fancybox.open('1_b.html');
+			});
+
+			$("#fancybox-manual-b").click(function() {
+				$.fancybox.open({
+					href : 'iframe.html',
+					type : 'iframe',
+					padding : 5
+				});
+			});
+
+			$("#fancybox-manual-c").click(function() {
+				$.fancybox.open([
+					{
+						href : '1_b.jpg',
+						title : 'My title'
+					}, {
+						href : '2_b.jpg',
+						title : '2nd title'
+					}, {
+						href : '3_b.jpg'
+					}
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50
+						}
+					}
+				});
+			});
+
+
+		});
+	</script>
+
+
+<!------------------------------------------------------------------------------------------->
+
+
+<script src="js/cufon-yui.js"type ="text/javascript"></script>
+
+<script type="text/javascript" src="js/Myriad_Pro_400.font.js"></script>
+
+<script type="text/javascript">
+Cufon.replace('p', {
+	hover: true
+});
+</script>
+
+
+
+<script type="text/javascript">
+Cufon.replace('h1', {
+	hover: true
+});
+</script>
+
+
+<script type="text/javascript">
+Cufon.replace('h2', {
+	hover: true
+});
+</script>
+
+
+
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('menup.png','sidebar1_foto1p.png')">
+
+
+ <div id="header">
+ 
+ <div id="header_box">
+ 
+ 
+ <div id="logo"><a href="index-2.html"><img src="logo.jpg"></a></div><!--logo-->
+ 
+ <div id="contato_header"><img src="contato_header.png" usemap="#Map">
+   <map name="Map">
+     <area shape="rect" coords="468,14,534,30" href="https://www.facebook.com/cardosoengenharia" target="_blank">
+   </map>
+ </div><!--contato_header-->
+ 
+ 
+ <div id="menu">
+ 
+ <ul>
+ 
+ <li><a href="empresa.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','menup.png',1)"><img src="menu.png"  id="Image3"></a></li>
+ <li><a href="servicos.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','menu2p.png',1)"><img src="menu2.png"  id="Image4"></a></li>
+ <li><a href="obras_realizadas.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','menu3p.png',1)"><img src="menu3.png"  id="Image5"></a></li>
+ <li><a href="clientes.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','menu4p.png',1)"><img src="menu4.png"  id="Image6"></a></li>
+ <li><a href="localizacao.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image7','','menu5p.png',1)"><img src="menu5.png"  id="Image7"></a></li>
+ <li><a href="contato.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image8','','menu6p.png',1)"><img src="menu6.png"  id="Image8"></a></li>
+ 
+ </ul>
+ 
+ </div><!--menu-->
+ 
+ 
+ </div><!--header_box-->
+ 
+ </div><!--header-->
+
+
+ <div id="anima">
+ 
+ 
+ <div id="anima_box">
+ 
+ 
+ <div id="foto_anima9"></div><!--foto_anima-->
+ 
+
+ <div id="shape2_anima"></div><!--shapa2_anima-->
+  
+ <div id="shape_anima"><img src="shape_anima_pagdois.png"></div><!--shape_anima-->
+ 
+ <div id="tit"><img src="tit_obras_realizadas.png"></div><!--tit-->
+
+ 
+ </div><!--anima_box-->
+ 
+ </div><!--anima-->
+
+
+
+ <div id="content">
+ 
+ <div id="content_box">
+
+
+
+ <div id="sidebar">
+ 
+ <div id="sidebar_foto"><a href="servicos.html"><img src="sidebar_pagdois3.png"></a></div><!--sidebar_foto-->
+  
+   <div id="shape_sidebar2"></div><!--shape_sidebar--> 
+   
+          <div id="shape_sidebar"></div><!--shape_sidebar-->
+
+ <div id="shape3"><img src="shape3.png"></div><!--shape-->
+
+ 
+ </div><!--sidebar-->
+ 
+ 
+ <div id="text_galeria">
+ 
+<ul>
+
+<li><a class="fancybox" href="galeria/01.jpg" data-fancybox-group="gallery" title="Obras Realizadas"><img src="galeria/01_p.png"></a></li>
+<li><a class="fancybox" href="galeria/02.jpg" data-fancybox-group="gallery" title="Obras Realizadas"><img src="galeria/02_p.png"></a></li>
+<li><a class="fancybox" href="galeria/03.jpg" data-fancybox-group="gallery" title="Obras Realizadas"><img src="galeria/03_p.png"></a></li>
+<li><a class="fancybox" href="galeria/04.jpg" data-fancybox-group="gallery" title="Obras Realizadas"><img src="galeria/04_p.png"></a></li>
+<li><a class="fancybox" href="galeria/05.jpg" data-fancybox-group="gallery" title="Obras Realizadas"><img src="galeria/05_p.png"></a></li>
+<li><a class="fancybox" href="galeria/06.jpg" data-fancybox-group="gallery" title="Obras Realizadas"><img src="galeria/06_p.png"></a></li>
+<li><a class="fancybox" href="galeria/07.jpg" data-fancybox-group="gallery" title="Obras Realizadas"><img src="galeria/07_p.png"></a></li>
+<li><a class="fancybox" href="galeria/08.jpg" data-fancybox-group="gallery" title="Obras Realizadas"><img src="galeria/08_p.png"></a></li>
+<li><a class="fancybox" href="galeria/09.jpg" data-fancybox-group="gallery" title="Obras Realizadas"><img src="galeria/09_p.png"></a></li>
+<li><a class="fancybox" href="galeria/10.jpg" data-fancybox-group="gallery" title="Obras Realizadas"><img src="galeria/10_p.png"></a></li>
+<li><a class="fancybox" href="galeria/11.jpg" data-fancybox-group="gallery" title="Obras Realizadas"><img src="galeria/11_p.png"></a></li>
+<li><a class="fancybox" href="galeria/12.jpg" data-fancybox-group="gallery" title="Obras Realizadas"><img src="galeria/12_p.png"></a></li>
+<li><a class="fancybox" href="galeria/13.jpg" data-fancybox-group="gallery" title="Obras Realizadas"><img src="galeria/13_p.png"></a></li>
+<li><a class="fancybox" href="galeria/14.jpg" data-fancybox-group="gallery" title="Obras Realizadas"><img src="galeria/14_p.png"></a></li>
+<li><a class="fancybox" href="galeria/15.jpg" data-fancybox-group="gallery" title="Obras Realizadas"><img src="galeria/15_p.png"></a></li>
+<li><a class="fancybox" href="galeria/16.jpg" data-fancybox-group="gallery" title="Obras Realizadas"><img src="galeria/16_p.png"></a></li>
+<li><a class="fancybox" href="galeria/17.jpg" data-fancybox-group="gallery" title="Obras Realizadas"><img src="galeria/17_p.png"></a></li>
+<li><a class="fancybox" href="galeria/18.jpg" data-fancybox-group="gallery" title="Obras Realizadas"><img src="galeria/18_p.png"></a></li>
+<li><a class="fancybox" href="galeria/19.jpg" data-fancybox-group="gallery" title="Obras Realizadas"><img src="galeria/19_p.png"></a></li>
+<li><a class="fancybox" href="galeria/20.jpg" data-fancybox-group="gallery" title="Obras Realizadas"><img src="galeria/20_p.png"></a></li>
+<li><a class="fancybox" href="galeria/21.jpg" data-fancybox-group="gallery" title="Obras Realizadas"><img src="galeria/21_p.png"></a></li>
+
+</ul>
+            
+            
+            </div><!--text-->
+ 
+ </div><!--content_box-->
+ 
+ 
+ </div><!--content-->
+
+
+
+ <div id="espaco">
+ 
+ <div id="espaco_box">
+ 
+ </div><!--espaco_box-->
+ 
+ </div><!--espaco-->
+
+
+
+ <div id="footer">
+ 
+ <div id="footer_box">
+ 
+ <div class="linha_footer"><img src="linha_footer.jpg"></div><!--linha_footer-->
+ 
+ 
+ 
+ <div id="parte1">
+ 
+ <div id="logo_footer"><img src="logo_footer.jpg"></div><!--logo_footer-->
+ 
+ <h1>+55 (11) 4243-8754  /  (11) 7755-6403</h1>
+ 
+ </div><!--parte1-->
+ 
+ 
+ 
+ <div id="parte2">
+ 
+ <div id="email"><img src="icon_email.png"></div><!--email-->
+ 
+ <h2><a href="mailto:contato@cardosoengenharia.com.br">contato@cardosoengenharia.com.br</h2>
+ 
+ </div><!--parte2-->
+ 
+ 
+ 
+ <div id="parte3">
+ 
+ <div id="redes"><a href="https://www.facebook.com/cardosoengenharia" target="_blank"><img src="redes.png"></a> </div><!--redes-->
+ 
+ </div><!--parte3-->
+ 
+ 
+ </div><!--footer_box-->
+ 
+ </div><!--footer-->
+
+
+ <div id="espaco">
+ 
+ <div id="espaco_box">
+ 
+ </div><!--espaco_box-->
+ 
+ </div><!--espaco-->
+
+
+</body>
+
+<!-- Mirrored from www.cardosoengenharia.com.br/obras_realizadas.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 14 Jan 2015 22:49:10 GMT -->
+</html>

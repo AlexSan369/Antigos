@@ -1,0 +1,109 @@
+
+ @import url("font/stylesheet2.css"); 
+
+*{ margin:0; padding:0}
+
+body{ background:url(fundo.png) top center}
+
+img{ border:0}
+
+strong{ color: #000;}
+
+/*-------------------------------HEADER-------------------------------*/
+#header{ float:left; width:100%; height:200px;background:#FFFFFF}
+#header_box{ margin:0 auto; width:972px; height:200px;}
+
+/*--Logo--*/
+#logo{ float:left; margin:0 0 0 6px}
+
+/*--Menu--*/
+#menu{ float:left; width:544px; height:15px; margin:24px 0 0 72px}
+#menu ul{ float:left; list-style:none; }
+#menu ul li{ float:left}
+
+/*--Contato--*/
+#contato_header{ float:right; margin:101px 99px 0 0}
+
+/*-------------------------------ANIMA-------------------------------*/
+#anima{ float:left; width:100%; height:282px; }
+#anima_box{ margin:0 auto; width:972px; height:282px;  }
+#foto_anima{ margin:0 auto; width:1150px; height:282px; background:url(anima_pagdois1.jpg) top center no-repeat; position:absolute; z-index:-1; right:0px}
+#foto_anima2{ margin:0 auto; width:1150px; height:282px; background:url(anima_pagdois2.jpg) top center no-repeat; position:absolute; z-index:-1; right:0px}
+#foto_anima3{ margin:0 auto; width:1150px; height:282px; background:url(anima_pagdois3.jpg) top center no-repeat; position:absolute; z-index:-1; right:0px}
+#foto_anima4{ margin:0 auto; width:1150px; height:282px; background:url(anima_pagdois4.jpg) top center no-repeat; position:absolute; z-index:-1; right:0px}
+#foto_anima5{ margin:0 auto; width:1150px; height:282px; background:url(anima_pagdois5.jpg) top center no-repeat; position:absolute; z-index:-1; right:0px}
+#foto_anima6{ margin:0 auto; width:1150px; height:282px; background:url(anima_pagdois6.jpg) top center no-repeat; position:absolute; z-index:-1; right:0px}
+#foto_anima7{ margin:0 auto; width:1150px; height:282px; background:url(anima_pagdois7.jpg) top center no-repeat; position:absolute; z-index:-1; right:0px}
+#foto_anima8{ margin:0 auto; width:1150px; height:282px; background:url(anima_pagdois8.jpg) top center no-repeat; position:absolute; z-index:-1; right:0px}
+#foto_anima9{ margin:0 auto; width:1150px; height:282px; background:url(anima_pagdois9.jpg) top center no-repeat; position:absolute; z-index:-1; right:0px}
+
+/*--Shape--*/
+#shape_anima{ float:left; margin:0 0 0 0px; height:425px}
+#shape2_anima{ float:left;  left:0px; background:url(shape2_anima_pagdois.png) top center; width:803px; height:282px; margin:0 0 0 -549px}
+
+/*--TIT--*/
+#tit{ float:left; margin:135px 0 0 16px; position:absolute}
+
+/*-------------------------------CONTENT-------------------------------*/
+#content{ width:60%; height:auto; margin:auto;}
+
+/*--TEXT--*/
+#text{width:719px; margin: auto; text-align:center; }
+#text p1{  float:left; font-family: 'Arial', Helvetica, sans-serif; color:#7e7e7e; font-size:14px; width:650px; line-height:24px; text-align:justify; margin:35px 0 0 16px; }
+#text p2{  float:left; font-family: 'Arial', Helvetica, sans-serif; color:#595959; font-size:16px; width:650px; line-height:24px; text-align:justify; margin:35px 0 0 16px; }
+#text h1{  float:left; font-family: 'Arial', Helvetica, sans-serif; color:#961b1f; font-size:19px; width:650px; line-height:24px; text-align:justify; margin:35px 0 0 16px; }
+#retornar{ float:left; width:500px; margin:35px 0 0 16px}
+
+/*--UL_LI--*/
+#text ul{ float:left; list-style:none; margin:0 0 0 0px; width:719px}
+#text ul li{ float:left; margin:35px 0 0 16px}
+
+/*--Text_Galeri*/
+#text_galeria{ float:left; width:800px; margin:auto; text-align:center; background:red;}
+
+
+#mapa{ float:left; width:550px; height:400px; margin:25px 0 0 16px; border:6px solid #E9E9E9; -moz-border-radius: 8px;-webkit-border-radius: 8px;border-radius: 8px}
+
+/*--Text_contato--*/
+#text_contato{ float:left; width:719px; }
+#text_contato p{ width:300px; font-family:"Arial", Helvetica, sans-serif; font-size:14px; line-height:23px; text-align:justify; margin:10px 0 0 16px; float:left; color:#7e817e}
+#text_contato p1{  float:left; font-family: 'Arial', Helvetica, sans-serif; color:#7e7e7e; font-size:14px; width:650px; line-height:20px; text-align:justify; margin:35px 0 0 16px; }
+#text_contato p2{  float:left; font-family: 'Arial', Helvetica, sans-serif; color:#595959; font-size:15px; width:650px; line-height:20px; text-align:justify; margin:35px 0 0 16px; }
+
+#text_contato .send{ font-size:12px; float:left;  border:0; padding:30px 50px 30px 50px;  font-family:'MyriadPro-Regular', Helvetica, sans-serif; color:#FFF;background:#BC2126; margin:15px 0px 20px 230px; cursor:pointer;-moz-border-radius: 8px;-webkit-border-radius: 8px;border-radius: 8px;}
+#text_contato .input{ border:2px solid #C0C0C0;font-family: "Arial", Helvetica, sans-serif; font-size:12px; color:#a5a5a5;-moz-border-radius: 8px;-webkit-border-radius: 8px;border-radius: 8px; padding:25px 25px 25px 25px; font-size:13px; margin:30px 0 0 0px; background-color:transparent;}
+
+
+/*--SIDEBAR--*/
+#sidebar{ float:right; width:253px; height:511px; }
+#sidebar_foto{ float:left; position:absolute; margin:17px 0 0 26px; position:absolute; z-index:3}
+
+#shape3{ float:left; position:absolute; margin:228px 0 0 500px;  right:0px; height:280px}
+
+
+/*-------------------------------FOOTER-------------------------------*/
+#footer{ float:left; width:100%; height:139px; background:url(fundo_footer.png) top center; margin-top:60px;}
+#footer_box{ margin:0 auto; width:972px; height:139px; }
+
+.linha_footer{ float:left; margin:-12px 0 0 25px; position:absolute}
+
+/*--Parte1--*/
+#parte1{ float:left; width:372px; height:139px; }
+#logo_footer{ float:left; margin:51px 0 0 25px}
+#parte1 h1{  float:left; font-family: 'MyriadPro-Regular', Helvetica, Arial, sans-serif; color:#F8F8F8; font-size:14px; width:290px; line-height:20px; text-align:justify; margin:73px 0 0 87px; position:absolute}
+
+/*--Parte2--*/
+#parte2{ float:left; width:366px; height:139px; }
+#email{ float:left; margin:62px 0 0 24px}
+#parte2 h2{  float:left; font-family: 'MyriadPro-Regular', Helvetica, Arial, sans-serif; color:#F8F8F8; font-size:15px; width:290px; line-height:20px; text-align:justify; margin:60px 0 0 80px; position:absolute}
+#parte2 a{ text-decoration:none; color:#F8F8F8}
+
+/*--Parte3--*/
+#parte3{ float:left; width:234px; height:139px; }
+#redes{ float:left; margin:48px 0 0 82px}
+
+/*-------------------------------ESPAÇO-------------------------------*/
+#espaco{ float:left; width:100%; height:15px; }
+#espaco_box{ margin:0 auto; width:972px; height:15px;}
+
+

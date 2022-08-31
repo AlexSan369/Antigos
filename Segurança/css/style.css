@@ -1,0 +1,176 @@
+h2{
+     color:red;
+     font-size: 60px;
+     font-weight: 800;
+     letter-spacing: -3px; /*espaçamento entre as letras*/
+     line-height: 60px;
+}
+
+body{
+  background:;
+  font-family: 'Lato', sans-serif;
+  vertical-align: baseline;
+  margin:0;
+  padding:0;
+}
+
+header{
+ 
+ background: url('../images/Telefone-Topo.png') no-repeat top right #444;
+ width:100%;
+ height:200px;
+ text-align:center;
+ width:100%;
+ position:absolute;
+ top:0;
+}
+
+.headerFixo {
+  position: fixed !important;
+  top: -130px;
+  z-index: 99;
+}
+
+.divSome{
+  display:none;
+}
+
+ /* btn ToTop */
+
+.scroll {
+  background: url('../images/up.png') no-repeat;
+  width:50px;
+  height:50px;
+  text-align:center;
+  padding:5px;
+  position:fixed;
+  bottom:5px; 
+  right:5px;
+  cursor:pointer;
+  color:#eee;
+  text-decoration:none;
+}
+
+#topo{
+  width:960px;
+  height:200px;
+  text-align:center;
+  margin: auto;
+}
+
+#logo{
+  width:200px;
+  height:220px;
+  background-color:#E16F4D;
+  float:left;
+  position:relative;
+  
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  -webkit-border-bottom-right-radius: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+}
+
+.menu-superior{
+  width:760px;
+  text-align:center;
+  position:absolute;
+  left:300px;
+  top:130px;  
+}
+
+.menu-superior ul{
+  height:60px;
+  list-style:none;
+  font-family: "Trebuchet MS";
+}
+
+.menu-superior ul li{
+  display:inline;
+  height:40px;
+  margin-left: 7px;
+  padding:5px 30px;
+}
+
+.home{
+   background-color:#E16F4D;
+}
+
+.linha{
+   border-right: 1px solid #fff;
+}
+
+.menu-superior ul li a{
+  color:#fff;
+  text-decoration:none;
+  text-transform:uppercase;
+}
+
+.menu-superior ul li a:hover {
+  color:#fff;
+}
+
+#pagina-total{
+  width:100%;
+  margin:auto;
+  position:relative;
+  top:230px;
+}
+#slide{
+  background:yellow;
+  text-align:center;
+  width:100%;
+  height:500px;
+}
+
+#produtos{
+  width:100%;
+  height:400px;
+  background: red;
+}
+
+#servicos{
+  width:100%;
+  height:400px;
+  background: #acc;
+}
+
+#quemsomos{
+  width:100%;
+  height:400px;
+  background: #cfc;
+}
+
+#contato{
+  width:100%;
+  height:400px;
+  background: #ccd;
+}
+
+footer  {
+  width:100%;
+  height:300px;
+  background:#E16F4D;
+  border-top:3px inset #444;
+  border-bottom:3px inset #444;
+}
+
+.qsm{
+  text-align:center;
+  color:#a30000;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: -2px; /*espaçamento entre as letras*/
+  line-height: 60px;
+}
+
+h3{
+  font-size: 32px;
+  font-weight: 300;
+  letter-spacing: -2px; /*espaçamento entre as letras*/
+  line-height: 38px;
+}
+p{
+  font-weight: 300;/*modifica a força da fonte para light*/
+  letter-spacing: -1px; /*espaçamento entre as letras*/
+}

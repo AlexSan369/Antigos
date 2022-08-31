@@ -1,0 +1,118 @@
+<!docktype html>
+<html lang="pt-br">
+<head>
+ <title> Site sem nome - Especializado em automação e Segurança</title>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all">	
+	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js'></script>
+	
+	<!--[if IE]>
+	  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<script>
+		function scrollToTop(scrollDuration) {
+		  var scrollStep = -window.scrollY / (scrollDuration / 15),
+            scrollInterval = setInterval(function(){
+			 if ( window.scrollY != 0 ) {
+              window.scrollBy( 0, scrollStep );
+             }
+             else clearInterval(scrollInterval); 
+            },15);
+        }	
+	</script>
+	
+	<script>
+		$(function(){   
+			var nav = $('header');
+			var navb = $('#logo');
+			$(window).scroll(function () { 
+				if ($(this).scrollTop() > 150) { 
+					nav.addClass("headerFixo");
+					navb.addClass("divSome");
+				} else { 
+					nav.removeClass("headerFixo");
+					navb.removeClass("divSome");  
+				} 
+			});  
+		});
+	</script>
+</head
+
+<body>
+  
+  <header>
+	 <div id="topo">	  
+	   <section id="logo">
+		 <h1></h1>
+	   </section>
+	  
+       <nav class="menu-superior">
+	     <ul id="selecionado">
+		   <li class="home"><a href="#">Inicio</a></li>
+		   <li class="linha"><a href="#produtos">Produtos</a></li>
+		   <li class="linha"><a href="#servicos">Serviços</a></li>
+		   <li class="linha"><a href="#quemsomos">QuemSomos</a></li>
+		   <li class="linha"><a href="#contato">Contato</a></li>
+	     </ul>
+	   </nav>
+	
+	 </div>
+   </header>
+   
+   <section id="pagina-total">
+   
+	   <section id="slide">
+		 <img src="images/exemplo-slide.png" />
+	   </section>
+	   
+	   <section id="quemsomos">
+	    <span class="qsm">Porque nós escolher ?</span>
+	   </section>
+	   
+	   <section id="servicos">
+		 
+		 <div id="seg">
+			<h3>Câmeras de Segurança </h3>
+			<p>
+			</p>
+		 </div>
+		 
+		 <div id="automa">
+			<h3>Automação Residencial e Empresárial</h3>
+			<p>
+			</p>
+		 </div>
+		 
+		 <div id="elet">
+			<h3>Elétrica | Residencial e Empresárial</h3>
+			<p>
+			</p>
+		 </div>
+	   
+	   </section>
+	   
+	   <section id="produtos">
+	      conteúdo -> Quem Somos
+	   </section>
+	   
+	   <section id="contato">
+	   
+		  CONTATO
+	   
+	   </section>
+	   
+	   <footer>
+		   conteúdo -> Rodapé
+       </footer>
+	   
+   </section>
+   
+   	<a class="scroll" onclick="scrollToTop(1000);" ></a>
+	
+		 	
+</body>
+
+	
+</html>

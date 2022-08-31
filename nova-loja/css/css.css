@@ -1,0 +1,595 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 12px;
+  background:#f4f4f4;
+}
+
+#principal{
+  width:auto;
+  height:auto;
+}
+
+#cabecalho{
+  width:auto;
+  height:167px;
+  background: url(../imagens/fundo-menu.png);
+}
+
+#cabecalho_superior{
+  width:100%;
+}
+
+#cabecalho_meio{
+  width:100%;
+  height:110px;
+  position:relative;
+}
+
+#cabecalho_meio h1{
+  text-indent:-9999px;
+  width:175px;
+  height: 52px;
+  position:absolute;
+  top:25px;
+  left:60px;
+  background:url(../imagens/img-logo.png) no-repeat top right;
+}
+
+#cabecalho_inferior{
+  width:100%;
+  border-bottom: 1px solid #ccc;
+  line-height: 22px;
+  padding-top:5px;
+}
+
+#menu-principal{
+  width:960px;
+  height:30px;
+  margin: 0 auto;
+  text-align:center;
+}
+
+#menu-principal ul{
+  list-style:none;
+  font-family: "Trebuchet MS";
+}
+
+#menu-principal ul li{
+  display:inline;
+  margin-left: 5px;
+  padding: 5px 30px;
+  font-weight:bold;
+  font-size:13px;
+  border-right: 1px solid #ccc;
+}
+
+#menu-principal ul li a{
+  color:#333;
+  text-decoration:none;
+}
+
+#menu-principal ul li a:hover{
+  color:red;
+}
+
+.sacola{
+  width:300px;
+  height:25px;
+  font-size:10px;
+  position:absolute;
+  top:10px;
+  right:250px;
+  background: url(../imagens/carrinho.png) no-repeat top right;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.fundo_principal{
+  background: url(../images/fundo-menu.png);
+}
+
+.fundo_azul{
+  background:#28A5D9;
+}
+
+.busca{
+  width:500px;
+  height:35px;
+  text-align:center;
+  position:absolute;
+  right:150px;
+  top:40px;
+}
+.busca input[type="search"]{
+  width:400px;
+}
+
+#menu-cima{
+  width:960px;
+  height:20px;
+  font-size:10px;
+  margin: 0 auto;
+
+}
+
+#menu-cima ul{
+  width:300px;
+  text-align:right;
+  float:right;
+  margin-right:10px;
+}
+
+#menu-cima ul li{
+  display:inline;
+  margin-left:10px;
+	
+}
+
+#menu-cima ul li a{
+  color:#000;
+  text-decoration:none;
+}
+
+#menu-cima ul li a:hover{
+  color:red;
+}
+
+.banner{
+  text-align:center;
+  width:960px;
+  height:auto;
+}
+
+.categoria{
+  width:219px;
+  height:auto;
+  margin:10px 8px 0 0;
+  float:left;
+  border: solid 1px #ccc;
+  font-weight:bold;
+}
+
+.categoria h2{
+  width:208px;
+  height:19px;
+  padding-left:10px;
+  margin-bottom:10px;
+  color:#fff;
+  font-size:16px;
+}
+
+.categoria ul{
+  width:219px;
+  list-style:none;
+}
+
+.categoria ul li a{
+  font-size:14px;
+  color:#fff;
+  text-decoration:none;
+}
+
+.categoria ul li a:hover{
+  
+}
+
+.categoria ul ul{
+  width:100%;
+  background: #fff;
+}
+
+.categoria ul ul li{
+  border: solid 1px #ccc;
+  padding:10px 0 10px 15px;
+}
+
+.categoria ul ul li a{
+  color:#666;
+  font-size:12px;
+}
+
+.categoria ul ul li a:hover{
+  color:#00ccff;
+  font-size:14px;
+}
+
+#corpo{
+  width:960px;
+  height:auto;
+  margin:0 auto;
+  margin-top:10px;
+}
+
+#lado-direito{
+  width:710;
+  height:auto;
+  float:left;
+  margin-top:10px;
+}
+.titulo{
+  width:100%;
+  height:19px;
+  color:#fff;
+  padding-left:10px;
+  margin-bottom:10px;
+}
+
+.vitrine{
+  width:698px;
+  height:auto;
+  padding:5px;
+  margin:10px 0;
+  float:left;
+  
+  border:1px solid #ccc;
+}
+.vitrine h2{
+  width:100%;
+  height:20px;
+  border:solid 1px #ccc;
+  background:#fbfbfb;
+  padding: 2px;
+}
+
+.vitrine ul{
+  width:100%;
+  height:auto;
+  margin-top:10px 0 10px 0;
+  background:#fbfbfb;
+  border:solid 1px #ccc;
+  padding: 2px;
+}
+
+.vitrine li{
+  width:155px;
+  margin:5px;
+  padding-bottom:10px;
+  text-align:center;
+  display:inline-block;
+  vertical-align:top;
+}
+
+.vitrine a{
+  color:#333;
+  font-size:14px;
+  text-decoration:none;
+}
+
+.vitrine figure{
+  margin-bottom:10px;
+}
+
+.vitrine span{
+  color:#FF0000;
+  font-size:16px;
+  margin-top:10px;
+  font-weight:bold;
+}
+
+.vitrine input{
+  width:92px;
+  height:30px;
+  background: url(../imagens/comprar.png) no-repeat;
+  border: 0px;
+  margin-top:10px;
+  cursor:pointer;
+}
+
+/*--------------INICIO RODAPÉ--------------*/
+
+#rodape {
+  width:100%;
+}
+
+#rodape2{
+  width:100%;
+  height:250px;
+  margin:10px auto;
+  
+}
+
+.limpa{
+  clear:both;
+}
+
+#caixa{
+  width:380px;
+  height:auto;
+  color:#fbfbfb;
+  float:left;
+  margin: 30px 55px 0px 100px;
+}
+
+#caixa strong{
+  color:#666;
+  font-size:16px;
+}
+
+#menu-rodape{
+  width:100%;
+  text-align:center;
+  border-top: solid 1px #ccc;
+  border-bottom: solid 1px #ccc;  
+  background: url(../imagens/fundo-menu.png) #fff;
+}
+
+#rodape-menu{
+  width:960px;
+  height:20px;
+  margin: 10px auto;
+  text-align:center;
+}
+
+#rodape-menu ul{
+  list-style:none;
+  font-family: "Trebuchet MS";
+}
+
+#rodape-menu ul li{
+  display:inline;
+  margin-left: 5px;
+  padding: 5px 30px;
+  font-weight:bold;
+  font-size:13px;
+  border-right: 1px solid #ccc;
+}
+
+#rodape-menu ul li a{
+  color:#333;
+  text-decoration:none;
+}
+
+#rodape-menu ul li a:hover{
+  color:red;
+}
+
+.rodape-subnav{
+  width:100%;
+  height:30px;
+  text-align:right;
+  margin-top:10px;
+  padding:3px 0;
+  border-bottom: dashed 1px #fff;
+}
+
+.rodape-subnav ul{
+  list-style:none;
+  font-family:"Trebuchet MS";
+}
+
+.rodape-subnav ul li{
+  display:inline;
+  vertical-align:bottom;
+  margin-right:15px;
+}
+
+.rodape-subnav ul li a{
+  color:#fff;
+  text-decoration:none;
+  font-weight:bold;
+  font-size:10px;
+}
+
+#direitos{
+  width:100%;
+  height:35px;
+  font-size: 16px;
+  color:#000;
+  background-color:#ccc;
+  text-align: center;
+  margin-top: -10px;
+  font-weight:bold;
+  padding-top: 20px; 
+}
+
+/************** DETALHES *****************************/
+
+#cx-img-produto{
+  width:310px;
+  height:434px;
+  border:1px solid #ccc;
+  padding:1px;
+  background:#fff;
+  margin-right: 10px;
+  float:left;
+}
+#cx-img-produto img{
+  border: 0;
+}
+
+#cx-titulo-produto{
+  width:370px;
+  height:110px;
+  float:left;
+  border: solid 1px #ccc;
+  background:#fff;
+}
+#cx-titulo-produto h1{
+  padding:5px;
+}
+#cx-titulo-produto a{
+  color:#333;
+  font-size:22px;
+}
+
+#cx-titulo-produto a:hover{
+  color:red;
+  font-size:25px;
+}
+
+#cx-preco-produto{
+  width:370px;
+  height:45px;
+  float:left;
+  border:solid 1px #ccc;
+  margin-top:10px;
+  text-align:center;
+  padding-top:5px;
+  background:#fff;
+}
+
+#cx-preco-produto strong{
+  color: #333;
+  font-size:26px;
+}
+
+#cx-preco-produto span{
+  color:#ff0000;
+  font-size:18px;
+}
+
+.duracao-autor{
+  width:370px;
+  height:33px;
+  border:solid 1px #ccc;
+  float:left;
+  margin-top:10px;
+  padding-top:10px;
+  font-size:14px;
+  background:#fff;
+}
+
+.duracao-autor h3{
+  height:60px;
+  font-size:14px;
+  background: url(../imagens/clok.png) 
+  no-repeat top left;
+}
+
+.duracao-autor span{
+  padding-left:60px;
+}
+
+.duracao-autor h4{
+  height:60px;
+  font-size:12px;
+  background: url(../imagens/boneco.png) 
+  no-repeat top left;
+}
+.une{
+  margin-top:3px;
+}
+
+#descricao-rapida{
+  width:370px;
+  height:149px;
+  border:solid 1px #ccc;
+  float:left;
+  margin-top:10px;
+  background:#fff;
+  color:#666;
+}
+
+#descricao-rapida h2{
+  width:364px;
+  color:#333;
+}
+#descricao-rapida p{
+  padding-top:5px;
+}
+
+#comprar-produto{
+  width: 690px;
+  height:45px;
+  border: solid 1px #ccc;
+  float:left;
+  text-align:right;
+  margin-top:10px;
+  margin-bottom:20px;
+  background:#fff;
+  padding-top:4px;  
+  padding-right:5px; 
+}
+
+#comprar-produto input{
+  width:175px;
+  height:45px;
+  background: url(../imagens/but-compra-curso.png)
+  no-repeat top right;
+  margin-top:2px;
+}
+/*******ABAS DESCRIÇÃO********/
+#abas-geral{
+	width: 680px;
+	margin: 10px auto;
+	
+}
+
+ul.menu{
+	margin:0;
+	padding:0;
+	float: left;
+	list-style:none;
+	height: 32px;
+	border-bottom:1px solid #999;
+	width: 100%;
+}
+ul.menu li {
+	float: left;
+	margin:0;
+	padding:0;
+	height:31px;
+	line-height:31px;
+	border: 1px solid#999;
+	border-left:none;
+	margin-bottom:-1px;
+	background: e0e0e0;
+	overflow:hidden;
+	position:relative;	
+}
+ul.menu li a {
+	text-decoration:none;
+	color: #000;
+	display:block;
+	font-size:1.2em;
+	padding:0 20px;
+	border: 1px solid #FFF;
+	outline: none;
+	
+}
+ul.menu li a:hover {
+	background: #66ccff;	
+
+}
+ul.menu li.active, ul.menu li.active a:hover{
+	background: #FFF;
+	border-bottom:1px solid #FFF;
+}
+
+#box{
+  text-align:left;
+  border:solid 1px #ccc;
+  border-top:5px;
+  clear:both;
+  float:left;
+  width:680px;
+  background:#fff;
+  padding-left:4px;
+  padding-right:7px;
+}
+.conteudo{
+  padding: 1px;
+  font-size: 1.2em;  
+}
+
+.conteudo h2{
+  font-weight:normal;
+  padding-bottom:10px;
+  border-bottom:dashed 1px #ddd;;
+  font-size:1.8em;  
+}
+
+#descrição h5{
+  font-size:16px;
+}
+
+#descrição p{
+  font-size:12px;
+  text-align:justify;
+  padding: 10px 7px 5px 3px;
+}
